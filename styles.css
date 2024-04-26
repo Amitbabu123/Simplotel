@@ -1,0 +1,157 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header nav {
+    background-color: #564f4f18;
+    color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Aligns the nav links to the center */
+    flex-grow: 1; /* Allows nav links to take available space */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Adjust space between nav items */
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-right: 50px; /* Adjust space between icons */
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh; /* 70% of the viewport height */
+    width: 100%;
+    background-image: url('heroimg.jpg'); /* Add your image path here */
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.hero-content {
+    position: absolute; /* Position the content relative to its nearest positioned ancestor */
+    margin-top: 70vh; /* Space from the top edge of the hero section */
+    font-size: 16px; /* Adjust the font size */
+    height: auto; /* Let the height adjust to the content */
+    left: 25px; /* Distance from the left edge */
+    width: 300px; /* Maximum width of the box */
+    display: flex; /* Use flexbox for easier alignment */
+    justify-content: center; /* Center the content horizontally */
+    background-color: rgba(14, 11, 11, 0.882); /* Background color with opacity */
+    padding: 20px; /* Padding inside the box */
+}
+
+
+.hero-content h1 {
+    margin: 0;
+}
+.content {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    align-items: center; /* Center items vertically */
+    padding: 50px 0; /* Add some padding to the top and bottom */
+    background-color: #7d727243; /* Set background color */
+}
+
+.paragraph {
+    flex: 1; /* Each paragraph takes equal space */
+    margin: 0 10px; /* Add margin between paragraphs */
+}
+
+.paragraph p {
+    font-size: 16px; /* Increase the font size */
+    line-height: 1.1; /* Increase line height for better readability */
+    text-align: center; /* Center align the text */
+}
+.img{
+    background-color: #7d727243;
+}
+.img h1{
+    margin-left: 20px;
+}
+
+.container {
+    background-color: #7d727243;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px; /* Adjust margin as needed */
+}
+
+.card {
+    width: 30%; /* Adjust width as needed */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content p {
+    margin-bottom: 15px;
+}
+
+.learn-more-btn {
+    background-color: #101215e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.learn-more-btn:hover {
+    background-color: #101215e6;
+}
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav .logo {
+        width: 40px;
+    }
+
+    .nav-links {
+        display: auto; /* Hide nav links on mobile */
+    }
+
+    .social-icons {
+        margin-left: auto; /* Align social icons to the right on mobile */
+    }
+}
